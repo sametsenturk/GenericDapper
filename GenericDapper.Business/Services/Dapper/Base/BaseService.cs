@@ -73,7 +73,6 @@ namespace GenericDapper.Business.Services.Dapper.Base
                 }
             }
             sqlQuery += ")";
-            string a = sqlQuery;
             this._db.Execute(sqlQuery, entity);
         }
 
@@ -91,7 +90,6 @@ namespace GenericDapper.Business.Services.Dapper.Base
                 }
             }
             sqlQuery += $" where ID = {entity.ID}";
-            string query = sqlQuery;
             this._db.Execute(sqlQuery, entity);
         }
     }
